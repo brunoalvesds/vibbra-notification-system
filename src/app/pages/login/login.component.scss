@@ -1,0 +1,36 @@
+.login-form {
+    max-width: 300px;
+}
+
+.login-form-margin {
+    margin-bottom: 16px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 0 30px -0px rgba(100, 100, 100, 0.2);
+    padding: 30px;
+    background-color: white;
+}
+
+.page-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        margin-bottom: 50px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,79 @@
+<!-- <app-sidemenu></app-sidemenu> -->
+<div class="site-header">
+    <img src="../../../assets/images/logo-vibbra-minimal.png" alt="Vibbra">
+</div>
+<div class="page-content">
+    <div class="wrapper">
+        <!-- <button nz-button nzType="primary" [nzSize]="'large'" nzShape="round"><i nz-icon nzType="plus"></i>Adicionar
+            aplicativo</button> -->
+        <div class="new-app-card">
+            <h1>Configurar novo aplicativo</h1>
+            <img src="../../../assets/images/user-interface.svg" alt="app image">
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                    <nz-form-label [nzXs]="24" nzRequired nzFor="email">Nome de identificação do aplicativo
+                    </nz-form-label>
+                    <nz-form-control [nzSm]="24" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                        <input nz-input formControlName="nickname" id="email" />
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <label nz-checkbox formControlName="email">Web Push</label>
+                    <label nz-checkbox formControlName="password">E-mail</label>
+                    <label nz-checkbox formControlName="website">SMS</label>
+                </nz-form-item>
+            </form>
+        </div>
+    </div>
+
+    <div class="card web-push-card">
+        <h2>Configurações do Web Push</h2>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+            <nz-form-item>
+                <nz-form-label [nzXs]="24" nzRequired nzFor="email">Nome de identificação do aplicativo</nz-form-label>
+                <nz-form-control [nzSm]="18" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input formControlName="email" id="email" />
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item nz-row class="register-area">
+                <nz-form-control [nzSpan]="24">
+                    <button nz-button nzType="primary" nzShape="round">Confirmar Web Push</button>
+                </nz-form-control>
+            </nz-form-item>
+        </form>
+    </div>
+
+    <div class="card web-push-card">
+        <h2>Configurações do E-mail</h2>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+            <nz-form-item>
+                <nz-form-label [nzXs]="24" nzRequired nzFor="email">Nome de identificação do aplicativo</nz-form-label>
+                <nz-form-control [nzSm]="18" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input formControlName="email" id="email" />
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item nz-row class="register-area">
+                <nz-form-control [nzSpan]="24">
+                    <button nz-button nzType="primary" nzShape="round">Confirmar E-mail</button>
+                </nz-form-control>
+            </nz-form-item>
+        </form>
+    </div>
+
+    <div class="card web-push-card">
+        <h2>Configurações do SMS</h2>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+            <nz-form-item>
+                <nz-form-label [nzXs]="24" nzRequired nzFor="email">Nome de identificação do aplicativo</nz-form-label>
+                <nz-form-control [nzSm]="18" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input formControlName="email" id="email" />
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item nz-row class="register-area">
+                <nz-form-control [nzSpan]="24">
+                    <button nz-button nzType="primary" nzShape="round">Confirmar SMS</button>
+                </nz-form-control>
+            </nz-form-item>
+        </form>
+    </div>
+</div>
